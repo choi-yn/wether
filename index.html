@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날씨 정보</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>날씨 정보</h1>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="도시 이름을 입력하세요">
+            <button onclick="getWeather()">검색</button>
+        </div>
+        <div class="weather-info">
+            <div class="weather-card">
+                <h2 id="city-name">도시</h2>
+                <div class="weather-details">
+                    <img id="weather-icon" src="" alt="날씨 아이콘">
+                    <p id="temperature">--°C</p>
+                    <p id="weather-description">날씨 설명</p>
+                    <div class="additional-info">
+                        <p>습도: <span id="humidity">--%</span></p>
+                        <p>풍속: <span id="wind-speed">-- km/h</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
